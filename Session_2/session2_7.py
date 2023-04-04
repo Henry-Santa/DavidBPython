@@ -10,5 +10,6 @@ search_to = int(input("Please enter max integer:  ")) # int, 5
 print("") # Spacing
 
 for number in range(2, search_to + 1): # int, 2 then 3 then 4 then 5
-    if is_prime(number): # bool, True, True, False, True
+    if is_prime(number): # bool, True (Initial Value)
         print(number)
+# Prints 2, 3, 5
