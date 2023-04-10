@@ -1,0 +1,46 @@
+1. As always, let's commit to testing every line of our code.
+
+Working with file loops means we may need to test a line inside the loop.
+
+for line in fh:
+    items = line.split()
+    print(items) # testing the split() inside the loop
+
+However, testing many lines means we may get too much, unclear output. We can use 'break' to test
+just the first line:
+
+for line in fh:
+    items = line.split()
+    print(items) # test split() on first line
+    break
+
+We could also use a counter to stop the loop after a number of lines:
+
+count = 0
+for line in fh:
+    count = count + 1
+    if count > 5: # break after 5 lines
+        break
+    items = line.split()
+    print(items) # test split() on first 5 lines IN
+
+2. As always, let's commit to reading and understanding our error messages.
+
+Sometimes we may see an exception that happens inside a loop.
+
+for line in fh:
+    items = line.split()
+    mktrf = items[1] # IndexError: list index out of range
+
+In those cases, it may be hard to see where the error is because it's happening with a particular
+line from the file, but not every line.
+
+To understand this error, print the variable(s) involved in the error xjustx xbeforex the error line
+
+for line in fh:
+    items = line.split()
+    print(items) # 'items' is the problem, so let's see what's in it
+    mktrf = items[1] # IndexError: list index out of range
+
+You may see a great deal of output, but the xlastx print statement before the exception will show
+you what is in the variable and thus why the error is being raised on this line.
