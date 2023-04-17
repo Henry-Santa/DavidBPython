@@ -8,4 +8,6 @@
     - Complete
 - Session 3
     - Complete
+- Session 4
+    - Complete
 
