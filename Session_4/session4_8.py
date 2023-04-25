@@ -1,10 +1,9 @@
 year = input("please enter a 4-digit year:  ") # str, '1926'
 
-if len(year) == 4 and year.isdigit():          # bool, True
-    pass
-else:
+if not (len(year) == 4 and year.isdigit()):          # bool, False
     print("sorry, must be 4 digits")
     exit()
+    
 
 factor = input("enter a factor to process: ")   # str, 'SMB'
 
