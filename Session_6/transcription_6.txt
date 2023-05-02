@@ -1,0 +1,13 @@
+Are you tinkering with your code until it comes out
+right?
+
+Or are you modeling your code in your own head?
+
+"Modeling" means saying what you think is happening
+after every statement - what is the value of every
+object after every line.
+
+If you can't model your code, you aren't really coding
+
+If you don't test *every* *line* of your code, you
+aren't really coding.
