@@ -1,0 +1,24 @@
+When we call a function, the program jumps up to the function, then drops back down:
+
+def myfunc():
+    print('hello')
+myfunc()            # prints 'hello'
+myfunc()            # prints 'hello'
+
+
+When we pass an argument, the value is passed to the function variable:
+
+def myfunc(arg):    # arg is 5
+    print (arg)     # 5
+
+val = 5 
+myfunc(val)         # passing 5
+
+
+When we return a value, the value is returned to the call assignment:
+
+def myfunc():
+    return 50
+
+val = myfunc() 
+print(val)          # 50
